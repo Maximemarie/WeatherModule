@@ -1,27 +1,25 @@
 <DOCTYPE>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Weather Widget</title>
-    <link rel="stylesheet" href="app.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial scale=1.0">
+  <title>Meteo Widget</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <section id="app">
-      <h1>
-        <span id="ville">Marseille</span>
-        <span class="tooltip">Tapez une autre ville si vous le souhaitez</span>
-      </h1>
+  <div class="container">
+    <h1>Meteo</h1>
+    <form action="">
+      <label for="city">Entrez une ville : </label>
+      <input type="text" name="city" id="city" required autocomplete="off">
+      <button type="submit">Rechercher</button>
+    </form>
+    <div id="weather"></div>
 
-      <i class="wi wi-day-rain"></i>
+  </div>
+<script src="script.js"></script>
 
-      <h2>
-        <span id="temperature">25</span> C° (<span id="conditions" >Ciel Dégagé</span>)
-      </h2>
-
-    </section>
-
-   <script src="/app.js"></script>
-  </body>
+</body>
 </html>
